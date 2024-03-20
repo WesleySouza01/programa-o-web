@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+
+<head>
+    <title>Formulário de Gamers</title>
+</head>
+
+<body bgcolor="#66B2FF">
+
+    <center>
+        <h2>Formulário de Gamers</h2>
+
+        <form action="processar_gamers.php" method="post">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="idade">Idade:</label><br>
+            <input type="number" id="idade" name="idade" required><br><br>
+
+            <label for="plataforma">Plataforma:</label><br>
+            <select id="plataforma" name="plataforma">
+                <option value="PC">PC</option>
+                <option value="PlayStation">PlayStation</option>
+                <option value="Xbox">Xbox</option>
+                <option value="Nintendo">Nintendo</option>
+                <option value="Outra">Outra</option>
+            </select><br><br>
+
+            <label for="jogo_favorito">Jogo Favorito:</label><br>
+            <input type="text" id="jogo_favorito" name="jogo_favorito" required><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+
+        <h2>Meu Vídeo</h2>
+
+        <video width="640" height="360" controls>
+            <source src="caminho_para_o_seu_video.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+
+        <p></p>
+
+        <audio controls>
+            <source src="caminho_para_o_seu_audio.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </center>
+
+</body>
+
+</html>
